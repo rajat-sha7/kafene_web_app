@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"
+        integrity="sha512-L4lHq2JI/GoKsERT8KYa72iCwfSrKYWEyaBxzJeeITM9Lub5vlTj8tufqYk056exhjo2QDEipJrg6zen/DDtoQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="order.js"  type="text/javascript" defer></script>
+
+
+
+    <style>
+        #orders {
+            color: #20b883;
+            border-bottom: 3px solid #20b883;
+            padding-bottom: 18px;
+        }
+    </style>
+       <link rel="stylesheet" href="style.css">
+
+ 
+    <title>Kafene app</title>
+</head>
+
+<body>
+
+                     <!-- navbar section ------------------------------->
+    <div class="Topbar_Section">
+
+        <div class="logo_Section">
+            <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo">
+            <div> <p class="logo_Name">Kafene</p></div>
+        </div>
+
+
+        <nav>
+            <a href="order.html" id="orders">Orders</a>
+            <a href="product.html">Products</a>
+            <a href="users.html" id="Users">Users</a>
+        </nav>
+
+        <p id="logoutbtn" onclick="loggedout()">Logout</p>
+
+    </div>
+
+                                 <!-- MAIN section ------------------------------->
+    <div class="maincont">
+        
+        <div class="filterpart">
+            <h1>Orders</h1>
+            <div id="filters">
+                <p id="filltext">Fillters</p>
+                <p id="count">Count:0</p>
+            </div>
+
+
+
+            <div class="inputparts">
+                <p>
+                    <label class="checkbox"><input type="checkbox" name="orders" value="New" checked
+                            onclick="getData()"> New</label>
+                </p>
+
+                <p>
+                    <label class="checkbox"><input type="checkbox" name="orders" value="Packed" checked
+                            onclick="getData()"> Packed</label>
+                </p>
+
+                <p>
+                    <label class="checkbox"><input type="checkbox" name="orders" value="InTransit" checked
+                            onclick="getData()"> InTransit</label>
+                </p>
+
+                <p>
+                    <label class="checkbox"><input type="checkbox" name="orders" value="Delivered" checked
+                            onclick="getData()">Delivered</label>
+                </p>
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <table class="table_section">
+            <tr>
+                <th>ID </th>
+                <th>Customer </th>
+                <th>Date </th>
+                <th>Amount </th>
+                <th>Status </th>
+            </tr>
+
+
+
+            <tbody id="orderdata">
+                <tr></tr>
+            </tbody>
+        </table>
+
+    </div>
+
+   
+
+   
+
+
+</body>
+
+</html>

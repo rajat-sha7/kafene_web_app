@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"
+        integrity="sha512-L4lHq2JI/GoKsERT8KYa72iCwfSrKYWEyaBxzJeeITM9Lub5vlTj8tufqYk056exhjo2QDEipJrg6zen/DDtoQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="users.js" type="text/javascript" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        #Users {
+            color: #20b883;
+            border-bottom: 3px solid #20b883;
+            padding-bottom: 18px;
+
+        }
+        .input_box {
+            width: 100%;
+            padding-top: 16px;
+            padding-top: 16px;
+            font-size: 14px;
+            box-sizing: border-box;
+            border: 0;
+            border-bottom: 2px solid #8c8c8c;
+            margin-bottom: 16px;
+            outline: none;
+
+        }
+
+        .reset_button {
+
+
+
+            display: inline-block;
+            border-radius: 30px;
+            padding: 14px 36px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            background-color: #20b883;
+            color: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin-top: 24px;
+           
+
+        }
+        .reset_button:hover{
+            background: rgb(32,184,131);
+
+                background: radial-gradient(circle, rgba(32,184,131,1) 23%, rgba(178,232,221,1) 83%);
+
+        }
+   
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Kafene app</title>
+</head>
+
+<body>
+
+                  <!-- navbar section ------------------------------->
+    <div class="Topbar_Section">
+
+        <div class="logo_Section">
+            <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo">
+            <div>
+                <p class="logo_Name">Kafene</p>
+            </div>
+        </div>
+
+
+        <nav>
+            <a href="order.html">Orders</a>
+            <a href="product.html">Products</a>
+            <a href="users.html" id="Users">Users</a>
+        </nav>
+
+        <p id="logoutbtn" onclick="loggedOut()">Logout</p>
+
+
+    </div>
+
+
+
+
+
+<!-- MAIN section ------------------------------->
+ 
+
+
+        <div class="usercontainer">
+            <h1>Users</h1>
+        
+            <form class="inputForm">
+              <input class="input_box" type="search" id="searchInput" placeholder="Enter Name Here.." />
+              <input type="reset"
+                onclick="resetUser()" class="reset_button" value="Reset" />  
+            </form>
+        
+            <div class="orderHome">
+              <table class="HomeOrderTable">
+                <tr>
+                  <th>ID</th>
+                  <th>User Avatar</th>
+                  <th>Full Name</th>
+                  <th>DoB</th>
+                  <th>Gender</th>
+                  <th>Current Location</th>
+                </tr>
+                <tbody id="orderdata">
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+
+        
+
+
+
+
+
+
+ 
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"  type="text/javascript" defer></script>
+    <title>KAFENE APP</title>
+
+    <style>
+        .mainBox {
+            margin-top: 100px
+        }
+
+        .form_login {
+            box-shadow: 0 0 6px #ccc;
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 32px;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            border-radius: 6px;
+
+        }
+
+        .form_login h1 {
+            letter-spacing: 1px;
+            font-weight: 500;
+            margin: 0 0 24px;
+
+        }
+
+        .input_box {
+            width: 100%;
+            padding-top: 16px;
+            padding-top: 16px;
+            font-size: 14px;
+            box-sizing: border-box;
+            border: 0;
+            border-bottom: 2px solid #8c8c8c;
+            margin-bottom: 16px;
+            outline: none;
+
+        }
+
+        .login_button {
+
+
+
+            display: inline-block;
+            border-radius: 30px;
+            padding: 14px 36px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            background-color: #20b883;
+            color: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin-top: 24px;
+
+        }
+        .login_button:hover{
+            background: rgb(32,184,131);
+
+                background: radial-gradient(circle, rgba(32,184,131,1) 23%, rgba(178,232,221,1) 83%);
+
+        }
+
+        .form_login{
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+                                    <!-- navbar section ------------------------------->
+    <div class="Topbar_Section">
+
+        <div class="logo_Section">
+            <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo">
+           <div> <p class="logo_Name">Kafene</p></div>
+        </div>
+
+
+        <nav>
+            <a  href="index.html" id="Orders">Orders</a>
+            <a  href="index.html" >Products</a>
+            <a  href="index.html" >Users</a>
+        </nav>
+
+    </div>
+
+
+                           <!-- loginSection ------------------------->
+
+    <div class="mainBox">
+        <form id="form_id" method="post" class="form_login" name="myform">
+            <h1>Sign In</h1>
+            <input type="text" class="input_box" name="username" id="username"
+                placeholder="Enter Your Name">
+
+            <input type="password" class="input_box" name="password" id="password"
+                placeholder="Enter Your password">
+
+            <input type="button" class="login_button" id="submit" value="Login" onclick="loginValidate()">
+
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
